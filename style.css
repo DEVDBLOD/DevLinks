@@ -4,7 +4,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: 'Poppins';
-    transition: .4s;
+    transition: .2s;
 }
 
 p {
@@ -32,6 +32,7 @@ html,body {
     --ft-modo: url(imagens/MoonStars.svg);
     --bg-ld: rgb(255, 255, 255);
     --right: 100;
+    --ant-btn: 0;
 }
 
 .light {
@@ -43,6 +44,7 @@ html,body {
     --ft-modo: url(imagens/Sun.svg);
     --bg-ld: rgb(255, 255, 255);
     --right: 0;
+    --ant-btn: 50%;
 }
 
 .bg-pagina {
@@ -107,6 +109,11 @@ html,body {
     position: absolute;
     right: var(--right);
     cursor: pointer;
+    left: var(--ant-btn);
+}
+
+.modo button:hover {
+    outline: .3rem solid rgba(0,0,0, 0.1);
 }
 
 .modo button > .img {
